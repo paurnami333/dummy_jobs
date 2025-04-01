@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+ 
+
+<html lang="en">
+ 
+
+<head>
+ 
+
+    <meta charset="UTF-8">
+ 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+    <title>Dummy Job Hub</title>
+ 
+
+    <link rel="stylesheet" href="/static/styles.css">
+ 
+
+</head>
+ 
+
+<body>
+ 
+
+    <div class="container">
+ 
+
+        <h1>Job Listings</h1>
+ 
+
+        
+ 
+
+        <div class="job-list">
+ 
+
+            {% for job in jobs %}
+ 
+
+            <div class="job-card {% if job.featured %}featured{% endif %}">
+ 
+
+                <div class="company-logo">
+ 
+
+                    {{ job.company[0] }}
+ 
+
+                </div>
+ 
+
+                <div class="job-details">
+ 
+
+                    <div class="job-header">
+ 
+
+                        <h2>{{ job.title }}</h2>
+ 
+
+                        <span class="company">{{ job.company }}</span>
+ 
+
+                    </div>
+ 
+
+                    <div class="job-meta">
+ 
+
+                        <span class="location">{{ job.location }}</span>
+ 
+
+                        <span class="separator">•</span>
+ 
+
+                        <span class="type">{{ job.type }}</span>
+ 
+
+                    </div>
+ 
+
+                    <div class="salary">{{ job.salary }}</div>
+ 
+
+                    <p class="description">{{ job.description }}</p>
+ 
+
+                    <div class="tags">
+ 
+
+                        {% for tag in job.tags %}
+ 
+
+                        <span class="tag">{{ tag }}</span>
+ 
+
+                        {% endfor %}
+ 
+
+                    </div>
+ 
+
+                    <div class="posted">Posted: {{ job.posted }}</div>
+ 
+
+                </div>
+ 
+
+            </div>
+ 
+
+            {% endfor %}
+ 
+
+        </div>
+ 
+
+    </div>
+ 
+
+</body>
+ 
+
+</html>

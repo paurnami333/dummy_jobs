@@ -1,0 +1,28 @@
+id,title,company,location,salary,date_posted,description,tags
+ 
+
+1001,Senior Python Developer,TechCorp International,"San Francisco, CA","$120,000 - $150,000 per year",Posted 2 days ago,We are looking for a skilled Python developer to join our team. Experience with Django and Flask required.,"Python, Django, Flask, Full-time"
+ 
+
+1002,Data Scientist,Analytics Pro,"New York, NY","$130,000 - $160,000 per year",Posted 3 days ago,Looking for a data scientist with expertise in machine learning and statistical analysis.,"Python, Machine Learning, Statistics, Full-time"
+ 
+
+1003,Frontend Developer,WebSolutions Inc.,Remote,"$90,000 - $110,000 per year",Posted 1 week ago,Join our team as a frontend developer. Strong knowledge of React and modern JavaScript required.,"JavaScript, React, CSS, Remote"
+ 
+
+1004,DevOps Engineer,CloudSystems,"Austin, TX","$115,000 - $140,000 per year",Posted 4 days ago,"Seeking a DevOps engineer with experience in AWS, Docker, and CI/CD pipelines.","AWS, Docker, Kubernetes, Jenkins"
+ 
+
+1005,Product Manager,Innovate Labs,"Seattle, WA","$125,000 - $155,000 per year",Posted 1 day ago,Looking for an experienced product manager to lead our tech product development.,"Product Management, Agile, Tech, Leadership"
+ 
+
+1006,Machine Learning Engineer,AI Innovations,"Boston, MA","$140,000 - $170,000 per year",Posted 5 days ago,Join our AI team to build cutting-edge machine learning solutions.,"Python, TensorFlow, PyTorch, AI"
+ 
+
+1007,Full Stack Developer,Digital Solutions,"Chicago, IL","$100,000 - $130,000 per year",Posted 2 weeks ago,Seeking a full stack developer with experience in MERN stack.,"JavaScript, React, Node.js, MongoDB"
+ 
+
+1008,UX/UI Designer,Creative Design Co.,"Portland, OR","$95,000 - $120,000 per year",Posted 3 days ago,Join our design team to create beautiful and functional user interfaces.,"UX, UI, Figma, Adobe XD"
+ 
+
+1009,Database Administrator,DataSystems Inc.,"Dallas, TX","$110,000 - $135,000 per year",Posted 1 week ago,Looking for a skilled DBA with experience in SQL Server and PostgreSQL.,"SQL, PostgreSQL, SQL Server, Database"

@@ -1,0 +1,316 @@
+body {
+ 
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+
+    background-color: #f5f7fa;
+ 
+
+    margin: 0;
+ 
+
+    padding: 0;
+ 
+
+}
+ 
+
+
+ 
+
+.container {
+ 
+
+    max-width: 1200px;
+ 
+
+    margin: 0 auto;
+ 
+
+    padding: 20px;
+ 
+
+}
+ 
+
+
+ 
+
+h1 {
+ 
+
+    color: #2d3748;
+ 
+
+    margin-bottom: 30px;
+ 
+
+}
+ 
+
+
+ 
+
+.job-list {
+ 
+
+    display: grid;
+ 
+
+    gap: 20px;
+ 
+
+}
+ 
+
+
+ 
+
+.job-card {
+ 
+
+    background: white;
+ 
+
+    border-radius: 8px;
+ 
+
+    padding: 20px;
+ 
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ 
+
+    display: flex;
+ 
+
+    border-left: 4px solid #e2e8f0;
+ 
+
+}
+ 
+
+
+ 
+
+.job-card.featured {
+ 
+
+    border-left-color: #4299e1;
+ 
+
+}
+ 
+
+
+ 
+
+.company-logo {
+ 
+
+    width: 60px;
+ 
+
+    height: 60px;
+ 
+
+    background-color: #ebf8ff;
+ 
+
+    color: #3182ce;
+ 
+
+    border-radius: 50%;
+ 
+
+    display: flex;
+ 
+
+    align-items: center;
+ 
+
+    justify-content: center;
+ 
+
+    font-weight: bold;
+ 
+
+    font-size: 24px;
+ 
+
+    margin-right: 20px;
+ 
+
+    flex-shrink: 0;
+ 
+
+}
+ 
+
+
+ 
+
+.job-details {
+ 
+
+    flex-grow: 1;
+ 
+
+}
+ 
+
+
+ 
+
+.job-header {
+ 
+
+    display: flex;
+ 
+
+    align-items: center;
+ 
+
+    margin-bottom: 10px;
+ 
+
+}
+ 
+
+
+ 
+
+.job-header h2 {
+ 
+
+    margin: 0;
+ 
+
+    color: #2d3748;
+ 
+
+    font-size: 20px;
+ 
+
+}
+ 
+
+
+ 
+
+.company {
+ 
+
+    margin-left: 10px;
+ 
+
+    color: #718096;
+ 
+
+}
+ 
+
+
+ 
+
+.job-meta {
+ 
+
+    color: #718096;
+ 
+
+    margin-bottom: 10px;
+ 
+
+}
+ 
+
+
+ 
+
+.salary {
+ 
+
+    color: #38a169;
+ 
+
+    font-weight: 500;
+ 
+
+    margin-bottom: 10px;
+ 
+
+}
+ 
+
+
+ 
+
+.description {
+ 
+
+    color: #4a5568;
+ 
+
+    margin-bottom: 15px;
+ 
+
+}
+ 
+
+
+ 
+
+.tags {
+ 
+
+    display: flex;
+ 
+
+    gap: 8px;
+ 
+
+    margin-bottom: 15px;
+ 
+
+}
+ 
+
+
+ 
+
+.tag {
+ 
+
+    background-color: #ebf8ff;
+ 
+
+    color: #3182ce;
+ 
+
+    padding: 4px 12px;
+ 
+
+    border-radius: 999px;
+ 
+
+    font-size: 14px;
+ 
+
+}
+ 
+
+
+ 
+
+.posted {
+ 
+
+    color: #a0aec0;
+ 
+
+    font-size: 14px;
+ 
+
+}
