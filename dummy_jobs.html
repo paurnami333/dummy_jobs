@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
  
 
@@ -970,4 +971,978 @@
 </body>
  
 
+=======
+<!DOCTYPE html>
+ 
+
+<html lang="en">
+ 
+
+<head>
+ 
+
+    <meta charset="UTF-8">
+ 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+    <title>JobSearch - Find Your Dream Job</title>
+ 
+
+    <style>
+ 
+
+        body {
+ 
+
+            font-family: Arial, sans-serif;
+ 
+
+            margin: 0;
+ 
+
+            padding: 0;
+ 
+
+            background-color: #f5f5f5;
+ 
+
+            color: #333;
+ 
+
+        }
+ 
+
+        header {
+ 
+
+            background-color: #0066cc;
+ 
+
+            color: white;
+ 
+
+            padding: 20px 0;
+ 
+
+            text-align: center;
+ 
+
+        }
+ 
+
+        nav {
+ 
+
+            background-color: #004d99;
+ 
+
+            padding: 10px 0;
+ 
+
+        }
+ 
+
+        nav ul {
+ 
+
+            list-style-type: none;
+ 
+
+            margin: 0;
+ 
+
+            padding: 0;
+ 
+
+            text-align: center;
+ 
+
+        }
+ 
+
+        nav ul li {
+ 
+
+            display: inline;
+ 
+
+            margin: 0 20px;
+ 
+
+        }
+ 
+
+        nav ul li a {
+ 
+
+            color: white;
+ 
+
+            text-decoration: none;
+ 
+
+        }
+ 
+
+        .container {
+ 
+
+            max-width: 1200px;
+ 
+
+            margin: 0 auto;
+ 
+
+            padding: 20px;
+ 
+
+        }
+ 
+
+        .job-filters {
+ 
+
+            background-color: white;
+ 
+
+            padding: 15px;
+ 
+
+            margin-bottom: 20px;
+ 
+
+            border-radius: 5px;
+ 
+
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ 
+
+        }
+ 
+
+        .job-list {
+ 
+
+            display: grid;
+ 
+
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+ 
+
+            gap: 20px;
+ 
+
+        }
+ 
+
+        .job-card {
+ 
+
+            background-color: white;
+ 
+
+            border-radius: 5px;
+ 
+
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+ 
+
+            padding: 20px;
+ 
+
+            transition: transform 0.3s ease;
+ 
+
+        }
+ 
+
+        .job-card:hover {
+ 
+
+            transform: translateY(-5px);
+ 
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+ 
+
+        }
+ 
+
+        .job-card h3 {
+ 
+
+            margin-top: 0;
+ 
+
+            color: #0066cc;
+ 
+
+        }
+ 
+
+        .job-card .company {
+ 
+
+            font-weight: bold;
+ 
+
+            margin-bottom: 10px;
+ 
+
+        }
+ 
+
+        .job-card .location {
+ 
+
+            color: #666;
+ 
+
+            margin-bottom: 10px;
+ 
+
+        }
+ 
+
+        .job-card .salary {
+ 
+
+            color: #0a0;
+ 
+
+            font-weight: bold;
+ 
+
+            margin-bottom: 10px;
+ 
+
+        }
+ 
+
+        .job-card .date {
+ 
+
+            color: #999;
+ 
+
+            font-size: 0.9em;
+ 
+
+            margin-bottom: 15px;
+ 
+
+        }
+ 
+
+        .job-card .tags {
+ 
+
+            display: flex;
+ 
+
+            flex-wrap: wrap;
+ 
+
+            gap: 5px;
+ 
+
+            margin-top: 10px;
+ 
+
+        }
+ 
+
+        .job-card .tag {
+ 
+
+            background-color: #e6f2ff;
+ 
+
+            color: #0066cc;
+ 
+
+            padding: 5px 10px;
+ 
+
+            border-radius: 15px;
+ 
+
+            font-size: 0.8em;
+ 
+
+        }
+ 
+
+        footer {
+ 
+
+            background-color: #333;
+ 
+
+            color: white;
+ 
+
+            text-align: center;
+ 
+
+            padding: 20px 0;
+ 
+
+            margin-top: 40px;
+ 
+
+        }
+ 
+
+        .pagination {
+ 
+
+            display: flex;
+ 
+
+            justify-content: center;
+ 
+
+            margin-top: 30px;
+ 
+
+        }
+ 
+
+        .pagination a {
+ 
+
+            display: inline-block;
+ 
+
+            padding: 8px 12px;
+ 
+
+            margin: 0 5px;
+ 
+
+            background-color: white;
+ 
+
+            border: 1px solid #ddd;
+ 
+
+            border-radius: 4px;
+ 
+
+            text-decoration: none;
+ 
+
+            color: #0066cc;
+ 
+
+        }
+ 
+
+        .pagination a.active {
+ 
+
+            background-color: #0066cc;
+ 
+
+            color: white;
+ 
+
+            border-color: #0066cc;
+ 
+
+        }
+ 
+
+    </style>
+ 
+
+</head>
+ 
+
+<body>
+ 
+
+    <header>
+ 
+
+        <h1>JobSearch</h1>
+ 
+
+        <p>Find Your Dream Job Today</p>
+ 
+
+    </header>
+ 
+
+    
+ 
+
+    <nav>
+ 
+
+        <ul>
+ 
+
+            <li><a href="#" class="active">Home</a></li>
+ 
+
+            <li><a href="#">Browse Jobs</a></li>
+ 
+
+            <li><a href="#">Companies</a></li>
+ 
+
+            <li><a href="#">Career Advice</a></li>
+ 
+
+            <li><a href="#">About Us</a></li>
+ 
+
+        </ul>
+ 
+
+    </nav>
+ 
+
+    
+ 
+
+    <div class="container">
+ 
+
+        <div class="job-filters">
+ 
+
+            <h2>Filter Jobs</h2>
+ 
+
+            <form>
+ 
+
+                <div>
+ 
+
+                    <input type="text" placeholder="Job title, keywords, or company" id="search-keywords">
+ 
+
+                    <input type="text" placeholder="Location" id="search-location">
+ 
+
+                    <select id="job-category">
+ 
+
+                        <option value="">All Categories</option>
+ 
+
+                        <option value="tech">Technology</option>
+ 
+
+                        <option value="finance">Finance</option>
+ 
+
+                        <option value="marketing">Marketing</option>
+ 
+
+                        <option value="healthcare">Healthcare</option>
+ 
+
+                    </select>
+ 
+
+                    <button type="submit">Search Jobs</button>
+ 
+
+                </div>
+ 
+
+            </form>
+ 
+
+        </div>
+ 
+
+        
+ 
+
+        <h2 id="search-results">Showing 15 jobs in Technology</h2>
+ 
+
+        
+ 
+
+        <div class="job-list">
+ 
+
+            <div class="job-card" id="job-1" data-id="1001">
+ 
+
+                <h3>Senior Python Developer</h3>
+ 
+
+                <div class="company">TechCorp International</div>
+ 
+
+                <div class="location">San Francisco, CA</div>
+ 
+
+                <div class="salary">$120,000 - $150,000 per year</div>
+ 
+
+                <div class="date">Posted 2 days ago</div>
+ 
+
+                <p>We are looking for a skilled Python developer to join our team. Experience with Django and Flask required.</p>
+ 
+
+                <div class="tags">
+ 
+
+                    <span class="tag">Python</span>
+ 
+
+                    <span class="tag">Django</span>
+ 
+
+                    <span class="tag">Flask</span>
+ 
+
+                    <span class="tag">Full-time</span>
+ 
+
+                </div>
+ 
+
+            </div>
+ 
+
+            
+ 
+
+            <div class="job-card" id="job-2" data-id="1002">
+ 
+
+                <h3>Data Scientist</h3>
+ 
+
+                <div class="company">Analytics Pro</div>
+ 
+
+                <div class="location">New York, NY</div>
+ 
+
+                <div class="salary">$130,000 - $160,000 per year</div>
+ 
+
+                <div class="date">Posted 3 days ago</div>
+ 
+
+                <p>Looking for a data scientist with expertise in machine learning and statistical analysis.</p>
+ 
+
+                <div class="tags">
+ 
+
+                    <span class="tag">Python</span>
+ 
+
+                    <span class="tag">Machine Learning</span>
+ 
+
+                    <span class="tag">Statistics</span>
+ 
+
+                    <span class="tag">Full-time</span>
+ 
+
+                </div>
+ 
+
+            </div>
+ 
+
+            
+ 
+
+            <div class="job-card" id="job-3" data-id="1003">
+ 
+
+                <h3>Frontend Developer</h3>
+ 
+
+                <div class="company">WebSolutions Inc.</div>
+ 
+
+                <div class="location">Remote</div>
+ 
+
+                <div class="salary">$90,000 - $110,000 per year</div>
+ 
+
+                <div class="date">Posted 1 week ago</div>
+ 
+
+                <p>Join our team as a frontend developer. Strong knowledge of React and modern JavaScript required.</p>
+ 
+
+                <div class="tags">
+ 
+
+                    <span class="tag">JavaScript</span>
+ 
+
+                    <span class="tag">React</span>
+ 
+
+                    <span class="tag">CSS</span>
+ 
+
+                    <span class="tag">Remote</span>
+ 
+
+                </div>
+ 
+
+            </div>
+ 
+
+            
+ 
+
+            <div class="job-card" id="job-4" data-id="1004">
+ 
+
+                <h3>DevOps Engineer</h3>
+ 
+
+                <div class="company">CloudSystems</div>
+ 
+
+                <div class="location">Austin, TX</div>
+ 
+
+                <div class="salary">$115,000 - $140,000 per year</div>
+ 
+
+                <div class="date">Posted 4 days ago</div>
+ 
+
+                <p>Seeking a DevOps engineer with experience in AWS, Docker, and CI/CD pipelines.</p>
+ 
+
+                <div class="tags">
+ 
+
+                    <span class="tag">AWS</span>
+ 
+
+                    <span class="tag">Docker</span>
+ 
+
+                    <span class="tag">Kubernetes</span>
+ 
+
+                    <span class="tag">Jenkins</span>
+ 
+
+                </div>
+ 
+
+            </div>
+ 
+
+            
+ 
+
+            <div class="job-card" id="job-5" data-id="1005">
+ 
+
+                <h3>Product Manager</h3>
+ 
+
+                <div class="company">Innovate Labs</div>
+ 
+
+                <div class="location">Seattle, WA</div>
+ 
+
+                <div class="salary">$125,000 - $155,000 per year</div>
+ 
+
+                <div class="date">Posted 1 day ago</div>
+ 
+
+                <p>Looking for an experienced product manager to lead our tech product development.</p>
+ 
+
+                <div class="tags">
+ 
+
+                    <span class="tag">Product Management</span>
+ 
+
+                    <span class="tag">Agile</span>
+ 
+
+                    <span class="tag">Tech</span>
+ 
+
+                    <span class="tag">Leadership</span>
+ 
+
+                </div>
+ 
+
+            </div>
+ 
+
+            
+ 
+
+            <div class="job-card" id="job-6" data-id="1006">
+ 
+
+                <h3>Machine Learning Engineer</h3>
+ 
+
+                <div class="company">AI Innovations</div>
+ 
+
+                <div class="location">Boston, MA</div>
+ 
+
+                <div class="salary">$140,000 - $170,000 per year</div>
+ 
+
+                <div class="date">Posted 5 days ago</div>
+ 
+
+                <p>Join our AI team to build cutting-edge machine learning solutions.</p>
+ 
+
+                <div class="tags">
+ 
+
+                    <span class="tag">Python</span>
+ 
+
+                    <span class="tag">TensorFlow</span>
+ 
+
+                    <span class="tag">PyTorch</span>
+ 
+
+                    <span class="tag">AI</span>
+ 
+
+                </div>
+ 
+
+            </div>
+ 
+
+            
+ 
+
+            <div class="job-card" id="job-7" data-id="1007">
+ 
+
+                <h3>Full Stack Developer</h3>
+ 
+
+                <div class="company">Digital Solutions</div>
+ 
+
+                <div class="location">Chicago, IL</div>
+ 
+
+                <div class="salary">$100,000 - $130,000 per year</div>
+ 
+
+                <div class="date">Posted 2 weeks ago</div>
+ 
+
+                <p>Seeking a full stack developer with experience in MERN stack.</p>
+ 
+
+                <div class="tags">
+ 
+
+                    <span class="tag">JavaScript</span>
+ 
+
+                    <span class="tag">React</span>
+ 
+
+                    <span class="tag">Node.js</span>
+ 
+
+                    <span class="tag">MongoDB</span>
+ 
+
+                </div>
+ 
+
+            </div>
+ 
+
+            
+ 
+
+            <div class="job-card" id="job-8" data-id="1008">
+ 
+
+                <h3>UX/UI Designer</h3>
+ 
+
+                <div class="company">Creative Design Co.</div>
+ 
+
+                <div class="location">Portland, OR</div>
+ 
+
+                <div class="salary">$95,000 - $120,000 per year</div>
+ 
+
+                <div class="date">Posted 3 days ago</div>
+ 
+
+                <p>Join our design team to create beautiful and functional user interfaces.</p>
+ 
+
+                <div class="tags">
+ 
+
+                    <span class="tag">UX</span>
+ 
+
+                    <span class="tag">UI</span>
+ 
+
+                    <span class="tag">Figma</span>
+ 
+
+                    <span class="tag">Adobe XD</span>
+ 
+
+                </div>
+ 
+
+            </div>
+ 
+
+            
+ 
+
+            <div class="job-card" id="job-9" data-id="1009">
+ 
+
+                <h3>Database Administrator</h3>
+ 
+
+                <div class="company">DataSystems Inc.</div>
+ 
+
+                <div class="location">Dallas, TX</div>
+ 
+
+                <div class="salary">$110,000 - $135,000 per year</div>
+ 
+
+                <div class="date">Posted 1 week ago</div>
+ 
+
+                <p>Looking for a skilled DBA with experience in SQL Server and PostgreSQL.</p>
+ 
+
+                <div class="tags">
+ 
+
+                    <span class="tag">SQL</span>
+ 
+
+                    <span class="tag">PostgreSQL</span>
+ 
+
+                    <span class="tag">SQL Server</span>
+ 
+
+                    <span class="tag">Database</span>
+ 
+
+                </div>
+ 
+
+            </div>
+ 
+
+        </div>
+ 
+
+        
+ 
+
+        <div class="pagination">
+ 
+
+            <a href="#" class="active">1</a>
+ 
+
+            <a href="#">2</a>
+ 
+
+            <a href="#">3</a>
+ 
+
+            <a href="#">4</a>
+ 
+
+            <a href="#">5</a>
+ 
+
+            <a href="#">Next</a>
+ 
+
+        </div>
+ 
+
+    </div>
+ 
+
+    
+ 
+
+    <footer>
+ 
+
+        <p>&copy; 2025 JobSearch - The best place to find your dream job</p>
+ 
+
+        <div>
+ 
+
+            <a href="#">About Us</a> |
+ 
+
+            <a href="#">Contact</a> |
+ 
+
+            <a href="#">Privacy Policy</a> |
+ 
+
+            <a href="#">Terms of Service</a>
+ 
+
+        </div>
+ 
+
+    </footer>
+ 
+
+</body>
+ 
+
+>>>>>>> 5604df0caa2ccd776d97d819865cdc32659dc106
 </html>
